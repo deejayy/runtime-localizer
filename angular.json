@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "runtime-localizer": {
+      "projectType": "library",
+      "root": "projects/runtime-localizer",
+      "sourceRoot": "projects/runtime-localizer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/runtime-localizer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/runtime-localizer/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/runtime-localizer/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/runtime-localizer/src/test.ts",
+            "tsConfig": "projects/runtime-localizer/tsconfig.spec.json",
+            "karmaConfig": "projects/runtime-localizer/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
