@@ -2,11 +2,11 @@
 
 # Runtime Localizer
 
+Runtime localization was never been easier!
+
 ```
 npm i @deejayy/runtime-localizer
 ```
-
-Runtime localization was never been easier!
 
 - single build
 - keep translations in a plain simple JSON file
