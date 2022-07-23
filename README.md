@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/@deejayy/runtime-localizer?label=@deejayy/runtime-localizer)](https://www.npmjs.com/package/@deejayy/runtime-localizer)
+
 # Runtime Localizer
 
 ```
