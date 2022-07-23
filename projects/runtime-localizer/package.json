@@ -1,6 +1,22 @@
 {
   "name": "@deejayy/runtime-localizer",
   "version": "14.0.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deejayy/runtime-localizer"
+  },
+  "author": "DeeJayy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deejayy/runtime-localizer/issues"
+  },
+  "keywords": [
+    "angular",
+    "runtime localizer",
+    "localizer"
+  ],
+  "homepage": "https://github.com/deejayy/runtime-localizer",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",

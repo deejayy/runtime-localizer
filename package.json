@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prerelease": "ng lint && ng test && ng build --configuration production reactive-config",
+    "release": "npm publish dist/reactive-config/ --access public"
   },
   "private": true,
   "dependencies": {
