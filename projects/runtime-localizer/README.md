@@ -12,7 +12,7 @@ Runtime localization was never been easier!
 - keep translations in a plain simple JSON file
 - have effective fallback values
 - use anywhere (code, template)
-- unlimited languages (event loadable from backend!)
+- unlimited languages (even loadable from backend!)
 - setting kept persistent in the localStorage (overrides LOCALE_ID upon initialization)
 - loads before app starts
 
