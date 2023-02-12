@@ -1,6 +1,6 @@
 {
   "name": "@deejayy/runtime-localizer",
-  "version": "15",
+  "version": "15.0.0",
   "description": "Runtime Localizer for Angular",
   "private": false,
   "repository": {
