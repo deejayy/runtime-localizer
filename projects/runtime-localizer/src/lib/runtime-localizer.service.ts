@@ -10,13 +10,16 @@ export class RuntimeLocalizerService {
 
   public loadTranslations(localeId: string, languageList: LanguageDefinition[]) {
     if (languageList && languageList.length > 0) {
-      const langDef = languageList.find((lang) => lang.lang === localeId) || languageList.find(Boolean);
+      const langDef = languageList.find((lang) => lang.lang === localeId) ?? languageList.find(Boolean);
       if (langDef) {
         return this.http.get<Record<string, string>>(`${langDef.path}?cache=${new Date().getTime()}`).pipe(
           map((data) => {
             loadTranslations(data);
           }),
-          catchError((err) => (console.error('Error when loading translations:', err), of())),
+          catchError((err) => {
+            console.error('Error when loading translations:', err);
+            return of();
+          }),
         );
       }
     }

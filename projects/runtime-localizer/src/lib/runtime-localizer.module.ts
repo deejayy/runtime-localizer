@@ -26,7 +26,7 @@ export class RuntimeLocalizerModule {
             } catch (e) {
               console.error('Failed to get locale id from localstorage');
             }
-            return newLocale || DEFAULT_LOCALE_ID;
+            return newLocale ?? DEFAULT_LOCALE_ID;
           },
         },
         {

@@ -5,7 +5,7 @@
 Runtime localization was never been easier!
 
 ```
-npm i @deejayy/runtime-localizer
+npm i @angular/localize @deejayy/runtime-localizer
 ```
 
 - single build
@@ -18,13 +18,9 @@ npm i @deejayy/runtime-localizer
 
 ## Setup and usage
 
-### 1. Add necessary packages and changes to your angular application
+### 1. Add necessary changes to your angular application
 
-```
-npm i @angular/localize
-```
-
-Add this line to the beginning of your `polyfill.ts`:
+Add this line to the beginning of your `main.ts`:
 
 ```ts
 import '@angular/localize/init';
@@ -92,4 +88,3 @@ The second parameter is whether the page should be reloaded by the localizer mod
 ## Further reading
 
 Check official angular [localization guide](https://angular.io/guide/i18n-common-overview) for more info.
-
