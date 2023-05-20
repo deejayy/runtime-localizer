@@ -1,6 +1,6 @@
 {
   "name": "@deejayy/runtime-localizer",
-  "version": "15.0.0",
+  "version": "16.0.0",
   "description": "Runtime Localizer for Angular",
   "private": false,
   "repository": {
@@ -19,9 +19,9 @@
   ],
   "homepage": "https://github.com/deejayy/runtime-localizer",
   "peerDependencies": {
-    "@angular/common": "^15",
-    "@angular/core": "^15",
-    "@angular/localize": "^15"
+    "@angular/common": "^16",
+    "@angular/core": "^16",
+    "@angular/localize": "^16"
   },
   "dependencies": {
     "tslib": "^2.3.0"
